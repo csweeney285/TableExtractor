@@ -1,0 +1,49 @@
+0,1,2,3
+Block,Operation,Act.,Output Shape
+,Model,full,
+,Raw RGB images 0,-,3 X 1024 X 1024
+1.,FromRGB 0 MinBatchStd,-,16 X 1024 X 1024 17 X 1024 X 1024
+,Conv 3 X 3 Conv 3 X 3 AvgPoo,LReLU LReLU,16 X 1024 X 1024 32 X 1024 X 1024 32 X 512 X 512
+,Raw RGB images 1,-i,3 X 512 X 512
+,Concat/ simple,-,35 X 512 X 512
+2.,MinBatchStd,,36 X 512 X 512
+,Conv 3 X 3,LReLU,32 X 512 X 512
+,Conv 3 X 3,LReLU,64 X 512 X 512
+,AvgPoo,,64 X 256 X 256
+,Model,3 L,
+,Raw RGB images 2,-,3 X 256 X 256
+,Concat/,,67 X 256 X 256
+3.,MinBatchStd,,68 X 256 X 256
+,Conv 3 X 3,LReLU,64 X 256 X 256
+,Conv 3 X 3,LReLU,128 X 256 X 256
+,AvgPool,-,128 X 128 X 128
+,Model,2 L,
+,Raw RGB images 3,e,3 X 128 X 128
+,Concat/si simple,-,131 X 128 X 128
+4.,MinBatchStd,,132 X 128 X 128
+,Conv 3 X 3 Conv 3 X 3 AvgPoo,LReLU LReLU -i,128 X 128 X 128 256 X 128 X 128 256 X 64 X 64
+,Raw RGB images 4,-,3 X 64 X 64
+,Concat/sin,,259 X 64 X 64
+5.,MinBatchStd,-i,260 X 64 X 64
+,Cony 3 X 3,LReLU,256 X 64 X 64
+,Conv 3 X 3,LReLU,512 X 64 X 64
+,AvgPoo,-,512 X 32 X 32
+,Model,1 L,
+,Raw RGB images 5,,3 X 32 X 32
+,Concat/simpl,,515 X 32 X 32
+6.,MinBatchStd,,516 X 32 X 32
+,Cony 3 X 3 Conv 3 X 3 AvgPool,LReLU LReLU -,512 X 32 X 32 512 X 32 X 32 512 X 16 X 16
+,Raw RGB images 6,,3 16 X 16
+,"Concat/,",-,515 X 16 X 16
+7.,MinBatchStd,-,516 X 16 X 16
+,Conv 3 X 3 Conv 3 X 3 AvgPool,LReLU LReLU -i,512 X 16 X 16 512 X 16 X 16 512 X 8 X 8
+,Raw RGB images 7,,3 X 8 X 8
+,Concat/o simple,,515 X 8 X 8
+8.,MinBatchStd Conv 3 X 3 Conv 3 X 3,LReLU LReLU,516 X 8 X 8 512 X 8 X 8 512 X 8 X 8
+,AvgPool,-,512 X 4 X 4
+,Raw RGB images 7,-,3 X 4 X 4
+,Concat/psimple,,515 X 4 X 4
+9.,MinBatchStd,-,516 X 4 X 4
+,Conv 3 X 3,LReLU,512 X 4 X 4
+,Conv 4 X 4,LReLU,512 X 1 X 1
+,Fully Connected,Linear,1 X 1 X 1

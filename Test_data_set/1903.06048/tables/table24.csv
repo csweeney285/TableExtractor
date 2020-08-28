@@ -1,0 +1,7 @@
+0,1,2,3
+Method,# Real Images,Learning rate,IS (1)
+Real Images,-,-,11.34
+MSG-ProGAN,12M,0.003,8.63
+MSG-ProGAN,12M,0.001,8.24
+MSG-ProGAN,12M,0.005,8.33
+MSG-ProGAN,12M,0.01,7.92

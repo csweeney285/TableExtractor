@@ -1,0 +1,12 @@
+0,1
+Method,mIOU (%)
+FCN-8s 21,37.8
+CRF-RNN 37,39.3
+HO CRF 1,41.3
+Piecewise 17,43.3
+VeryDeep 30,44.5
+DeepLabv2 3,45.7
+RefineNet 16,47.3
+EncNet 34,51.7
+proposed (Xception-65),51.4
+proposed (Xception-71),52.5

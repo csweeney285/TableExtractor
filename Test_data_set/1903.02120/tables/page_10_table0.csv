@@ -1,0 +1,9 @@
+0,1,2,3
+,Method,,mIOU (%)
+,DPN,20,74.1
+,Piecewise,17,75.3
+,ResNet-38,31,82.5
+,PSPNet,136,82.6
+,DFN,32,82.7
+,EncNet,34,82.9
+Our proposed,(Xception-65),,85.3

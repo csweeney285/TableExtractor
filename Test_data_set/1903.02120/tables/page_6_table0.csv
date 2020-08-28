@@ -1,0 +1,6 @@
+0,1,2,3
+Method,output stride,mIOU (%),mIOU* (%)
+bilinear,32,70.77,94.8
+DUpsampling,32,72.09,99.9
+bilinear,16,72.15,98.4
+Upsampling,16,73.15,99.95

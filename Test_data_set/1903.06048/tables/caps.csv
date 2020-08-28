@@ -1,0 +1,8 @@
+name,caption candidates
+table27,['Table 6: Generator architecture for the MSG-ProGAN mod-els used in training']
+table7,"['Table 2: Experiments on high resolution (IO24xl024) datasetsWe use author provided scores where possible, and other-wise train models with the official code and recommended hyperparameters (denoteddsk']"
+table28,['Table 7: Discriminator Architecture for the MSG-ProGANand MSG-StyleGAN Models used in training.']
+table6,['Table 1: Experiments on mid-level resolution (ie.']
+table26,"['Table 3:Robustnessto learningrateCIFAR-10.', 'Table4:Ablation experimentsfor varying degreesofmultiscale gradientconnectionsthehighresolutionon(O24xl024) FFHQ dataset.']"
+table24,['Table 3:Robustness tOlearningrateCIFAR-10.']
+table25,['Table 5: Experiments with different combine functions onthe high resolution (1O24xl024) FFHQ dataset.']

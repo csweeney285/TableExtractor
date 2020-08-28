@@ -1,0 +1,8 @@
+0,1,2
+Used low-level features,mIOU (%),FLOPS
+N/A,73.15,0.80B
+conv13,72.7,1.13B
+blu2c3,74.03,1.15B
+b3u6c3,73.43,1.23B
+blu2c3 + b3u6c3,73.82,1.58B
+convl + b3u6c3,74.2,1.56B

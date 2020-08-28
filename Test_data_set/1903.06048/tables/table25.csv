@@ -1,0 +1,6 @@
+0,1,2
+Method,Combine function,FID (T)
+MSG-ProGAN,Plin-cat Pcat_lin Psimple,11.88 9.63 8.36
+MSG-StyleGAN,Psimple,6.46
+,Dlincat,6.12
+,cat_lin,5.80

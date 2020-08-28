@@ -1,0 +1,4 @@
+0,1,2,3
+Decoder,low-level features / ratio,mIOU (%),FLOPS
+Vanilla,efb2ulc2/ 4,79.36,43.65B
+Proposed,mfblul6c3 / 16,79.06,25.14B

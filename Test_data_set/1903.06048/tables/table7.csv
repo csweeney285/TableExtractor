@@ -1,0 +1,12 @@
+0,1,2,3,4,5
+Size,Method,# Real Images,GPU Used,Training Time,FID (J)
+30K,ProGANs 16,12M,-,-,7.79
+,MSG-PrOGAN,3.2M,8 V100-16GB,1.5 days,8.02
+,StyleGAN 16,25M,-,-,5.17
+,MSG-StyleGAN,11M,8 V100-16GB,4 days,6.37
+70K,ProGANs*,12M,4 V100-32GB,5.5 days,9.49
+,ProGANs 15,12M,-,-,8.04
+,MSG-ProGAN,6M,4 V100-32GB,6 days,8.36
+,StyleGAN*,25M,4 V100-32GB,6 days,4.47
+,StyleGAN 16,25M,-,-,4.40
+,MSG-StyleGAN,9.6M,4 V100-32GB,6 days,5.8

@@ -1,0 +1,8 @@
+0,1
+Level of Multi-scale connections,FID ()
+No connections (DC-GAN),14.20
+Coarse Only,10.84
+Middle Only,9.17
+Fine Only,9.74
+All (MSG-PrOGAN),8.36
+ProGAN*,9.49

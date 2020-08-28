@@ -1,0 +1,17 @@
+0,1,2,3
+Block,Operation,Act.,Output Shape
+1.,Latent Vector Conv 4 X 4 Conv 3 X 3,Norm LReLU LReLU,512 X 1 1 512 X 4 X 4 512 X 4 X 4
+2.,Upsample Cony 3 X 3 Conv 3 X 3,- LReLU LReLU,512 X 8 X 8 512 X 8 X 8 512 X 8 X 8
+3.,Upsample Conv 3 X 3 Conv 3 X 3,- LReLU LReLU,512 X 16 X 16 512 X 16 X 16 512 X 16 X 16
+4.,Upsample Conv 3 X 3 Conv 3 X 3,- LReLU LReLU,512 X 32 X 32 512 X 32 X 32 512 X 32 X 32
+,,Model 1 1,
+5.,Upsample Conv 3 X 3 Conv 3 X 3,- LReLU LReLU,512 X 64 X 64 256 X 64 X 64 256 X 64 X 64
+6.,Upsample Cony 3 X 3 Conv 3 X 3,- LReLU LReLU,256 X 128 X 128 128 X 128 X 128 128 X 128 X 128
+,,Model 2 1,
+7.,Upsample Conv 3 X 3 Cony 3 X 3,- LReLU LReLU,128 X 256 X 256 64 X 256 X 256 64 X 256 X 256
+,,Model 3 1,
+8.,Upsample Cony 3 X 3 Conv 3 X 3,- LReLU LReLU,64 X 512 X 512 32 X 512 X 512 32 X 512 X 512
+,Upsample,-,32 X 1024 X 1024
+9.,Conv 3 X 3,LReLU,16 X 1024 X 1024
+,Conv 3 X 3,LReLU,16 X 1024 X 1024
+,Model,full 1,

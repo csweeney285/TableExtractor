@@ -1,0 +1,8 @@
+name,caption
+page_8_table2.jpg,Table 6: State-of-the-art methods on PASCAL Context val setAlr2Ma+l
+page_7_table2.jpg,Table 4: mIOU on the Cityscapes val set. Our proposed decoderwith much less computation complexity achieves a similar perfor-mance as the vanilla decoder
+page_8_table1.jpg,Table 5: State-of-the-art methods on PASCAL VOC test set.
+page_10_table0.jpg,Table 7: State-of-the-art methods on PASCAL VOC test set with-out COCO pre-training
+page_6_table0.jpg,"Table l: mIOU over the PASCAL VOC val set ofDUpsamplingvs. bilinear upsampling. ""output stride"" indicates the ratio ofin-c,putimagespatialresolution to fnal output resolution.mIOU*ordenotes the upper bound"
+page_7_table1.jpg,"Table 2: mIOU over PASCAL VOC val set whenusingdiffer-ent fusion of featuresbruycz denotes low-level features namedblock clunit ylconvzin ResNetPFLOPS' denotes the amountofcomputation ofthe decoder including feature aggregation, con-volutional decoder and the fnal uosamoling"
+page_7_table3.jpg,"Table 3: mIOU over the PASCAL VOC val set whenusingdif-m-ferent fusion strategies offeatures. bxuycz denotes low-levelfea-netures named block clunit ylconv_z in ResNetor Xception.""et""DUand ""mt"" respectively indicatesentryAlow'and   middle flow"" inAl"
